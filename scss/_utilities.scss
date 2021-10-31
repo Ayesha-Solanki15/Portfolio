@@ -1,0 +1,131 @@
+.container {
+  max-width: $website-width;
+  padding: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+//Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
+
+//Backgrounds
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-dark {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-light {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background-color: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+button[type="submit"] {
+  margin: 1rem auto;
+  width: 50%;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin: 2rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+//padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+//Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.hori-line {
+  height: 3px;
+  width: 30rem;
+  background: $dark-color;
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 4rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}

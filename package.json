@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio_Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/css/main.css -w "
+  },
+  "author": "",
+  "license": "ISC"
+}
