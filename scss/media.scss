@@ -21,6 +21,16 @@
       }
     }
   }
+  #about {
+    &-a {
+      .about-info {
+        .bio {
+          line-height: 1.8rem;
+          word-spacing: 0.1rem;
+        }
+      }
+    }
+  }
 }
 //Smartphones
 
@@ -37,7 +47,7 @@
     align-items: center;
 
     li {
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 
@@ -67,135 +77,140 @@
       }
     }
   }
-}
 
-//Stack Grid Columns
-#home-a .specials,
-#home-b .stats,
-#home-c .process,
-#home-c .skills,
-.items,
-#contact-b .contact-info {
-  grid-template-columns: 1fr;
-}
+  //Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #home-c .skills,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
 
-#home {
-  &-a {
-    .specials div {
-      border-bottom: 1px $light-color solid;
-      padding-bottom: 1rem;
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
 
-      &:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
       }
     }
-  }
-  &-c {
-    .skills div {
-      border-bottom: 1px $light-color solid;
-      padding-bottom: 1rem;
+    &-c {
+      .skills div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
 
-      &:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-    }
-  }
-}
-// About Page
-#about {
-  &-a {
-    padding: 0;
-    .container {
-      .about-info {
-        padding: 1rem;
-        .bio-image {
-          display: none;
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
         }
       }
     }
   }
-  //Section-C
-  &-c {
-    padding: 0;
-  }
-  //Sectin-D
-  &-d {
-    .container {
-      display: flex;
-      flex-direction: column;
-
-      div {
-        margin: 1rem;
+  // About Page
+  #about {
+    &-a {
+      padding: 0;
+      .container {
+        .about-info {
+          padding: 1rem;
+          height: 500px;
+          display: inline-block;
+          .bio-image {
+            display: none;
+          }
+          .bio {
+            width: 80%;
+          }
+        }
       }
     }
-  }
-}
-//Work
-#work {
-  &-a {
-    .items {
-      .item {
+    //Section-C
+    &-c {
+      padding: 0;
+    }
+    //Sectin-D
+    &-d {
+      .container {
         display: flex;
         flex-direction: column;
+
         div {
-          margin: auto;
+          margin: 1rem;
         }
       }
     }
   }
-  &-b {
-    margin: 2rem auto;
-    h2 {
-      line-height: 2rem;
+  //Work
+  #work {
+    &-a {
+      .items {
+        .item {
+          display: flex;
+          flex-direction: column;
+          div {
+            margin: auto;
+          }
+        }
+      }
     }
-  }
-}
-//Contact
-#contact {
-  &-a {
-    padding: 0;
-    .text-fields {
-      grid-template-areas:
-        "name"
-        "subject"
-        "email"
-        "phone"
-        "message";
-    }
-  }
-  &-b {
-    div {
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #555;
-      &:last-child {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    &-b {
+      margin: 2rem auto;
+      h2 {
+        line-height: 2rem;
       }
     }
   }
-  &-c {
-    padding: 2rem;
-    h1 {
-      font-size: 2rem;
-      line-height: 1.8rem;
+  //Contact
+  #contact {
+    &-a {
+      padding: 0;
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #555;
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-c {
+      padding: 2rem;
+      h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
     }
   }
-}
 
-//Footer
-#main-footer {
-  height: 9rem;
-  .footer-content {
-    height: 6rem;
-    flex-direction: column;
-    padding: 1rem;
+  //Footer
+  #main-footer {
+    height: 9rem;
+    .footer-content {
+      height: 6rem;
+      flex-direction: column;
+      padding: 1rem;
 
-    .lead {
-      margin: 1rem auto;
-      font-size: 1rem;
+      .lead {
+        margin: 1rem auto;
+        font-size: 1rem;
+      }
     }
   }
 }

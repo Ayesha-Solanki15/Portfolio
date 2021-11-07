@@ -299,7 +299,7 @@ img {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
   gap: 0.5rem;
-  height: 300px;
+  height: 400px;
 }
 #about-a .about-info .bio-image {
   background: url("../img/pic2.jpg") no-repeat center 30%/cover;
@@ -309,8 +309,6 @@ img {
 #about-a .about-info .bio {
   border-left: 3px solid #ffbc00;
   padding: 1rem;
-  line-height: 1.8rem;
-  word-spacing: 0.1rem;
 }
 #about-a .about-info .bio .lead {
   font-size: 1rem;
@@ -492,6 +490,11 @@ img {
   #header-home .header-content h1 {
     font-size: 2.5rem;
   }
+
+  #about-a .about-info .bio {
+    line-height: 1.8rem;
+    word-spacing: 0.1rem;
+  }
 }
 @media (max-width: 500px) {
   .hori-line {
@@ -508,7 +511,7 @@ img {
     align-items: center;
   }
   #main-nav li {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   #header-home {
@@ -533,103 +536,108 @@ img {
   #header-inner .container #nav-bar {
     width: 100%;
   }
-}
-#home-a .specials,
+
+  #home-a .specials,
 #home-b .stats,
 #home-c .process,
 #home-c .skills,
 .items,
 #contact-b .contact-info {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 
-#home-a .specials div {
-  border-bottom: 1px #f4f4f4 solid;
-  padding-bottom: 1rem;
-}
-#home-a .specials div:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-#home-c .skills div {
-  border-bottom: 1px #f4f4f4 solid;
-  padding-bottom: 1rem;
-}
-#home-c .skills div:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem;
+  }
+  #home-a .specials div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #home-c .skills div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem;
+  }
+  #home-c .skills div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 
-#about-a {
-  padding: 0;
-}
-#about-a .container .about-info {
-  padding: 1rem;
-}
-#about-a .container .about-info .bio-image {
-  display: none;
-}
-#about-c {
-  padding: 0;
-}
-#about-d .container {
-  display: flex;
-  flex-direction: column;
-}
-#about-d .container div {
-  margin: 1rem;
-}
+  #about-a {
+    padding: 0;
+  }
+  #about-a .container .about-info {
+    padding: 1rem;
+    height: 500px;
+    display: inline-block;
+  }
+  #about-a .container .about-info .bio-image {
+    display: none;
+  }
+  #about-a .container .about-info .bio {
+    width: 80%;
+  }
+  #about-c {
+    padding: 0;
+  }
+  #about-d .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-d .container div {
+    margin: 1rem;
+  }
 
-#work-a .items .item {
-  display: flex;
-  flex-direction: column;
-}
-#work-a .items .item div {
-  margin: auto;
-}
-#work-b {
-  margin: 2rem auto;
-}
-#work-b h2 {
-  line-height: 2rem;
-}
+  #work-a .items .item {
+    display: flex;
+    flex-direction: column;
+  }
+  #work-a .items .item div {
+    margin: auto;
+  }
+  #work-b {
+    margin: 2rem auto;
+  }
+  #work-b h2 {
+    line-height: 2rem;
+  }
 
-#contact-a {
-  padding: 0;
-}
-#contact-a .text-fields {
-  grid-template-areas: "name" "subject" "email" "phone" "message";
-}
-#contact-b div {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #555;
-}
-#contact-b div:last-child {
-  border: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-#contact-c {
-  padding: 2rem;
-}
-#contact-c h1 {
-  font-size: 2rem;
-  line-height: 1.8rem;
-}
+  #contact-a {
+    padding: 0;
+  }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-b div {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #555;
+  }
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #contact-c {
+    padding: 2rem;
+  }
+  #contact-c h1 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
 
-#main-footer {
-  height: 9rem;
+  #main-footer {
+    height: 9rem;
+  }
+  #main-footer .footer-content {
+    height: 6rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  #main-footer .footer-content .lead {
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
 }
-#main-footer .footer-content {
-  height: 6rem;
-  flex-direction: column;
-  padding: 1rem;
-}
-#main-footer .footer-content .lead {
-  margin: 1rem auto;
-  font-size: 1rem;
-}
-
 @media (max-height: 580px) {
   #header-home .header-content {
     padding-top: 3rem;
